@@ -1,0 +1,11 @@
+Metadata-Version: 2.2
+Name: data_analysis
+Version: 0.0.1
+Author: Farmers for Forests
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: seaborn
+Requires-Dist: matplotlib
+Requires-Dist: streamlit
+Dynamic: author
+Dynamic: requires-dist
