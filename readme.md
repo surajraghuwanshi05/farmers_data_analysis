@@ -6,7 +6,8 @@ Ensuring data quality is crucial for maintaining accurate and reliable datasets.
 
 The primary goal is to **detect missing, incorrect, or inconsistent data**, store failed records separately, and maintain a **clean dataset for further analysis**.  
 
-Since removing invalid rows would significantly reduce the dataset, we have opted **not to exclude them** outright. Instead, these records are stored in a dedicated `failed_data.csv` file. Additional details regarding these issues can be found in the **logs** for further inspection.  
+Since removing invalid rows would significantly reduce the dataset, we have opted **not to exclude them** outright. Instead, these records are stored in a dedicated `failed_data.csv` file. Additional details regarding these issues can be found in the **logs** for further inspection. 
+🌐 Live Streamlit App: [Farmers Data Analysis App](https://surajraghuwanshi05-farmers-data-analysis-main-pedjcf.streamlit.app/)
 
 ---
 
