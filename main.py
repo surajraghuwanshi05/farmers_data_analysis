@@ -51,11 +51,11 @@ sns.set_style("whitegrid")
 
 
 
-# 📊 **1️⃣ Bar Chart: Total Land Area vs. Plantation Area**
+# 📊 **1️  Bar Chart: Total Land Area vs. Plantation Area**
 st.subheader(f"🏡 Total Land Area vs. Plantation Area ({selected_district})")
 plot_total_land_vs_plantation_area(df_filtered)
 
-# 💧 **2️⃣ Pie Chart: Water and Electricity Availability Distribution**
+# 💧 **2️ Pie Chart: Water and Electricity Availability Distribution**
 st.subheader(f"💧 Water and Electricity Availability Distribution ({selected_district})")
 plot_water_and_electricity_availability(df_filtered)
 
@@ -64,14 +64,24 @@ plot_water_and_electricity_availability(df_filtered)
 st.subheader(f"🌱 Tree Plantation Trend Over Time ({selected_district})")
 plot_plantation_trend(df_filtered)
 
-# 🌳 **3️⃣ Stacked Bar Chart: Distribution of Top 5 Tree Species**
+# 🌳 **4  Stacked Bar Chart: Distribution of Top 5 Tree Species**
 st.subheader(f"🌳 Distribution of Top 5 Tree Species Planted ({selected_district})")
 plot_top_5_tree_species(df_filtered)
 
+#  **5  Stacked Bar Chart: Distribution of Top 5 Tree Species**
+st.subheader(f"💰 Farmers Payment Status({selected_district})")
+plot_payment_distribution_bar(df_filtered)
 
-# 📚 Pie Chart: how many farmers took cc training 
+#  **6  Stacked Bar Chart: Distribution of Top 5 Tree Species**
+st.subheader(f"💰 Farmers Payment distribusion({selected_district})")
+calculate_amount_by_mode(df_filtered)
+
+
+# **7 Pie Chart: how many farmers took cc training 
 st.subheader(f"📚 CC Training Distribution ({selected_district})")
 plot_cc_training_distribution(df_filtered)
+
+
 
 # 📋 **4️⃣ Display Data Table**
 st.subheader(f"📋 Data Preview ({selected_district})")

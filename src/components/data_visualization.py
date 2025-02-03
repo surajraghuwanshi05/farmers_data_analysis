@@ -3,10 +3,12 @@ import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
+from src.loggers import logging
 
 
 # Function for Total Land Area vs Plantation Area
 def plot_total_land_vs_plantation_area(df_filtered):
+    logging.info("Plotting Total Land Area vs Plantation Area")
     fig, ax = plt.subplots(figsize=(10, 5))
     sns.barplot(x=["Total Land Area", "Plantation Area"], 
                 y=[df_filtered["total_land_area_acre"].sum(), df_filtered["area_f4f_acre"].sum()], 
@@ -17,6 +19,7 @@ def plot_total_land_vs_plantation_area(df_filtered):
 
 # Function for Water Availability Distribution Pie Chart
 def plot_water_and_electricity_availability(df_filtered):
+    logging.info("Plotting Water and Electricity Availability Distribution")
     # Ensure the values are only "Yes" and "No"
     water_counts = df_filtered["water_available"].value_counts().reindex(["Yes", "No"], fill_value=0)
     electricity_counts = df_filtered["electricity_available"].value_counts().reindex(["Yes", "No"], fill_value=0)
@@ -41,6 +44,8 @@ def plot_water_and_electricity_availability(df_filtered):
 
 
 def plot_plantation_trend(df_filtered):
+    
+    logging.info("Plotting Plantation Trend Over Time")
     # Ensure the plantation date column is in datetime format
     df_filtered["plantation_date"] = pd.to_datetime(df_filtered["plantation_date"], errors="coerce")
 
@@ -68,27 +73,57 @@ def plot_plantation_trend(df_filtered):
 
 
 def calculate_amount_by_mode(df_filtered):
+
+    logging.info("Calculating Amount Collected by Each Mode")
     # Group by the mode of collection and sum the amount collected
-    amount_by_mode = df_filtered.groupby('mode_of_collection')['amount_collected'].sum().reset_index()
+    amount_by_mode = df_filtered.groupby('mode_collection_cash_upi_banktransfer')['amount'].sum().reset_index()
 
     # Sort the values in descending order for better visualization
-    amount_by_mode_sorted = amount_by_mode.sort_values(by='amount_collected', ascending=False)
+    amount_by_mode_sorted = amount_by_mode.sort_values(by='amount', ascending=False)
 
     # Plot the result
     fig, ax = plt.subplots(figsize=(10, 5))
-    sns.barplot(x='mode_of_collection', y='amount_collected', data=amount_by_mode_sorted, palette="viridis", ax=ax)
+    sns.barplot(x='mode_collection_cash_upi_banktransfer', y='amount', data=amount_by_mode_sorted, palette="viridis", ax=ax)
     ax.set_title("Amount Collected by Each Mode")
     ax.set_ylabel("Amount Collected")
     ax.set_xlabel("Mode of Collection")
     plt.xticks(rotation=45)
     st.pyplot(fig)
+    # Add values above the bars
 
-    return amount_by_mode_sorted  # Optional: return the dataframe if needed
+
+
+
+
+logging.info("Displaying Data Table with Top 10 Rows")
+
+def plot_payment_distribution_bar(df_filtered):
+    logging.info("Plotting Payment Distribution among Farmers")
+    # Count the number of "Yes" and "No" values in the payment_collected column
+    payment_counts = df_filtered["farmer_payment_collected"].value_counts().reindex(["Yes", "No"], fill_value=0)
+
+    # Create a bar chart
+    fig, ax = plt.subplots(figsize=(8, 5))
+    bars = payment_counts.plot(kind="bar", color=["green", "red"], ax=ax)
+    ax.set_title("Farmers Payment Distribution")
+    ax.set_ylabel("Number of Farmers")
+    ax.set_xlabel("Payment Status")
+    plt.xticks(rotation=45)
+
+    # Add values above the bars
+    for bar in bars.patches:
+        height = bar.get_height()
+        ax.text(bar.get_x() + bar.get_width() / 2, height + 1,  # Positioning above the bar
+                f'{height}', ha='center', va='bottom', fontsize=10, color='black')
+
+    # Display the bar chart
+    st.pyplot(fig)
 
 
 
 
 def plot_top_5_tree_species(df_filtered):
+    logging.info("Plotting Top 5 Tree Species Planted")
     species_cols =  [
         "mango_native", "mango_grafted_kesar", "lemon_sai_sharbati", "sitaphal_native", 
         "sitaphal_golden", "sitaphal _balanagar", "awala", "awala_grafted", "peru", 
@@ -117,6 +152,7 @@ def plot_top_5_tree_species(df_filtered):
 
 
 def plot_cc_training_distribution(df_filtered):
+    logging.info("Plotting CC Training Distribution")
     # Count the number of "Yes" and "No" values in the cc_training_uploaded column
     cc_training_counts = df_filtered["cc_training_uploaded?"].value_counts().reindex(["Yes", "No"], fill_value=0)
 

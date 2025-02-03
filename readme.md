@@ -53,6 +53,11 @@ The project follows specific **assumptions and business rules** to validate data
 - Over **50% of the records** show **a mismatch between the total number of trees planted** and the **sum of species-wise tree distribution**.  
 - Removing these records would significantly reduce the dataset, so they are **logged separately** for further review.  
 
+### 💰 Payment Submission Gaps
+- **63.6%** of participants did not submit the payment.
+
+
+
 ---
 
 ## 🛠️ Methodology  

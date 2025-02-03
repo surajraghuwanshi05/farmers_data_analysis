@@ -1,13 +1,13 @@
-[ 2025-02-02 16:44:53,434 ] 185 root - INFO - Starting data quality checks...
-[ 2025-02-02 16:44:53,438 ] 122 root - ERROR - Invalid date detected in 'farmer_payment_date': Rows [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]
-[ 2025-02-02 16:44:53,438 ] 122 root - ERROR - Invalid date detected in 'contract_date': Rows [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54]
-[ 2025-02-02 16:44:53,440 ] 122 root - ERROR - Invalid date detected in 'plantation_date': Rows [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54]
-[ 2025-02-02 16:44:53,442 ] 122 root - ERROR - Invalid date detected in 'cc_training_date': Rows [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54]
-[ 2025-02-02 16:44:53,446 ] 54 root - ERROR - Land area inconsistencies found:    farmer_name  total_land_area_acre
+[ 2025-02-03 16:49:11,182 ] 184 root - INFO - Starting data quality checks...
+[ 2025-02-03 16:49:11,200 ] 121 root - ERROR - Invalid date detected in 'farmer_payment_date': Rows [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]
+[ 2025-02-03 16:49:11,202 ] 121 root - ERROR - Invalid date detected in 'contract_date': Rows [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54]
+[ 2025-02-03 16:49:11,203 ] 121 root - ERROR - Invalid date detected in 'plantation_date': Rows [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54]
+[ 2025-02-03 16:49:11,205 ] 121 root - ERROR - Invalid date detected in 'cc_training_date': Rows [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54]
+[ 2025-02-03 16:49:11,223 ] 53 root - ERROR - Land area inconsistencies found:    farmer_name  total_land_area_acre
 1     farmer_c                     5
 20    farmer_v                     5
 48    farmer_\x92                     8
-[ 2025-02-02 16:44:53,451 ] 134 root - ERROR - Contract uploaded but payment not collected:    farmer_name
+[ 2025-02-03 16:49:11,234 ] 133 root - ERROR - Contract uploaded but payment not collected:    farmer_name
 20    farmer_v
 21    farmer_w
 22    farmer_x
@@ -43,7 +43,7 @@
 52    farmer_\x96
 53    farmer_\x97
 54    farmer_\x98
-[ 2025-02-02 16:44:53,454 ] 141 root - ERROR - Invalid trees planted count:    farmer_name  trees_planted
+[ 2025-02-03 16:49:11,243 ] 140 root - ERROR - Invalid trees planted count:    farmer_name  trees_planted
 1     farmer_c            518
 2     farmer_d            660
 3     farmer_e           1100
@@ -84,7 +84,7 @@
 52    farmer_\x96            907
 53    farmer_\x97            514
 54    farmer_\x98            342
-[ 2025-02-02 16:44:53,458 ] 159 root - ERROR - Species count mismatch:    farmer_name  total_species_distributed  trees_planted
+[ 2025-02-03 16:49:11,253 ] 158 root - ERROR - Species count mismatch:    farmer_name  total_species_distributed  trees_planted
 0     farmer_b                        371            370
 1     farmer_c                        509            518
 2     farmer_d                        662            660
@@ -114,20 +114,20 @@
 49    farmer_\x93                        389            415
 50    farmer_\x94                        588            621
 51    farmer_\x95                        166            178
-[ 2025-02-02 16:44:53,462 ] 168 root - INFO - Failed data saved to artifacts/failed_data.csv
-[ 2025-02-02 16:44:53,462 ] 172 root - INFO - Removed 55 invalid records from the clean dataset.
-[ 2025-02-02 16:44:53,464 ] 180 root - INFO - Clean data saved to artifacts/cleaned_data.csv
-[ 2025-02-02 16:44:53,464 ] 198 root - INFO - Data quality checks completed.
-[ 2025-02-02 16:44:55,654 ] 185 root - INFO - Starting data quality checks...
-[ 2025-02-02 16:44:55,656 ] 122 root - ERROR - Invalid date detected in 'farmer_payment_date': Rows [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]
-[ 2025-02-02 16:44:55,657 ] 122 root - ERROR - Invalid date detected in 'contract_date': Rows [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54]
-[ 2025-02-02 16:44:55,658 ] 122 root - ERROR - Invalid date detected in 'plantation_date': Rows [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54]
-[ 2025-02-02 16:44:55,659 ] 122 root - ERROR - Invalid date detected in 'cc_training_date': Rows [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54]
-[ 2025-02-02 16:44:55,662 ] 54 root - ERROR - Land area inconsistencies found:    farmer_name  total_land_area_acre
+[ 2025-02-03 16:49:11,275 ] 167 root - INFO - Failed data saved to artifacts/failed_data.csv
+[ 2025-02-03 16:49:11,276 ] 171 root - INFO - Removed 55 invalid records from the clean dataset.
+[ 2025-02-03 16:49:11,280 ] 179 root - INFO - Clean data saved to artifacts/cleaned_data.csv
+[ 2025-02-03 16:49:11,280 ] 197 root - INFO - Data quality checks completed.
+[ 2025-02-03 16:51:34,980 ] 184 root - INFO - Starting data quality checks...
+[ 2025-02-03 16:51:34,986 ] 121 root - ERROR - Invalid date detected in 'farmer_payment_date': Rows [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]
+[ 2025-02-03 16:51:34,988 ] 121 root - ERROR - Invalid date detected in 'contract_date': Rows [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54]
+[ 2025-02-03 16:51:34,990 ] 121 root - ERROR - Invalid date detected in 'plantation_date': Rows [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54]
+[ 2025-02-03 16:51:34,993 ] 121 root - ERROR - Invalid date detected in 'cc_training_date': Rows [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54]
+[ 2025-02-03 16:51:35,000 ] 53 root - ERROR - Land area inconsistencies found:    farmer_name  total_land_area_acre
 1     farmer_c                     5
 20    farmer_v                     5
 48    farmer_\x92                     8
-[ 2025-02-02 16:44:55,670 ] 134 root - ERROR - Contract uploaded but payment not collected:    farmer_name
+[ 2025-02-03 16:51:35,009 ] 133 root - ERROR - Contract uploaded but payment not collected:    farmer_name
 20    farmer_v
 21    farmer_w
 22    farmer_x
@@ -163,7 +163,7 @@
 52    farmer_\x96
 53    farmer_\x97
 54    farmer_\x98
-[ 2025-02-02 16:44:55,675 ] 141 root - ERROR - Invalid trees planted count:    farmer_name  trees_planted
+[ 2025-02-03 16:51:35,017 ] 140 root - ERROR - Invalid trees planted count:    farmer_name  trees_planted
 1     farmer_c            518
 2     farmer_d            660
 3     farmer_e           1100
@@ -204,7 +204,7 @@
 52    farmer_\x96            907
 53    farmer_\x97            514
 54    farmer_\x98            342
-[ 2025-02-02 16:44:55,680 ] 159 root - ERROR - Species count mismatch:    farmer_name  total_species_distributed  trees_planted
+[ 2025-02-03 16:51:35,026 ] 158 root - ERROR - Species count mismatch:    farmer_name  total_species_distributed  trees_planted
 0     farmer_b                        371            370
 1     farmer_c                        509            518
 2     farmer_d                        662            660
@@ -234,20 +234,20 @@
 49    farmer_\x93                        389            415
 50    farmer_\x94                        588            621
 51    farmer_\x95                        166            178
-[ 2025-02-02 16:44:55,683 ] 168 root - INFO - Failed data saved to artifacts/failed_data.csv
-[ 2025-02-02 16:44:55,684 ] 172 root - INFO - Removed 55 invalid records from the clean dataset.
-[ 2025-02-02 16:44:55,686 ] 180 root - INFO - Clean data saved to artifacts/cleaned_data.csv
-[ 2025-02-02 16:44:55,686 ] 198 root - INFO - Data quality checks completed.
-[ 2025-02-02 16:53:51,576 ] 184 root - INFO - Starting data quality checks...
-[ 2025-02-02 16:53:51,578 ] 121 root - ERROR - Invalid date detected in 'farmer_payment_date': Rows [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]
-[ 2025-02-02 16:53:51,579 ] 121 root - ERROR - Invalid date detected in 'contract_date': Rows [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54]
-[ 2025-02-02 16:53:51,580 ] 121 root - ERROR - Invalid date detected in 'plantation_date': Rows [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54]
-[ 2025-02-02 16:53:51,582 ] 121 root - ERROR - Invalid date detected in 'cc_training_date': Rows [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54]
-[ 2025-02-02 16:53:51,585 ] 53 root - ERROR - Land area inconsistencies found:    farmer_name  total_land_area_acre
+[ 2025-02-03 16:51:35,031 ] 167 root - INFO - Failed data saved to artifacts/failed_data.csv
+[ 2025-02-03 16:51:35,032 ] 171 root - INFO - Removed 55 invalid records from the clean dataset.
+[ 2025-02-03 16:51:35,035 ] 179 root - INFO - Clean data saved to artifacts/cleaned_data.csv
+[ 2025-02-03 16:51:35,035 ] 197 root - INFO - Data quality checks completed.
+[ 2025-02-03 16:52:25,204 ] 184 root - INFO - Starting data quality checks...
+[ 2025-02-03 16:52:25,206 ] 121 root - ERROR - Invalid date detected in 'farmer_payment_date': Rows [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]
+[ 2025-02-03 16:52:25,207 ] 121 root - ERROR - Invalid date detected in 'contract_date': Rows [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54]
+[ 2025-02-03 16:52:25,207 ] 121 root - ERROR - Invalid date detected in 'plantation_date': Rows [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54]
+[ 2025-02-03 16:52:25,208 ] 121 root - ERROR - Invalid date detected in 'cc_training_date': Rows [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54]
+[ 2025-02-03 16:52:25,211 ] 53 root - ERROR - Land area inconsistencies found:    farmer_name  total_land_area_acre
 1     farmer_c                     5
 20    farmer_v                     5
 48    farmer_\x92                     8
-[ 2025-02-02 16:53:51,589 ] 133 root - ERROR - Contract uploaded but payment not collected:    farmer_name
+[ 2025-02-03 16:52:25,215 ] 133 root - ERROR - Contract uploaded but payment not collected:    farmer_name
 20    farmer_v
 21    farmer_w
 22    farmer_x
@@ -283,7 +283,7 @@
 52    farmer_\x96
 53    farmer_\x97
 54    farmer_\x98
-[ 2025-02-02 16:53:51,595 ] 140 root - ERROR - Invalid trees planted count:    farmer_name  trees_planted
+[ 2025-02-03 16:52:25,219 ] 140 root - ERROR - Invalid trees planted count:    farmer_name  trees_planted
 1     farmer_c            518
 2     farmer_d            660
 3     farmer_e           1100
@@ -324,7 +324,7 @@
 52    farmer_\x96            907
 53    farmer_\x97            514
 54    farmer_\x98            342
-[ 2025-02-02 16:53:51,600 ] 158 root - ERROR - Species count mismatch:    farmer_name  total_species_distributed  trees_planted
+[ 2025-02-03 16:52:25,223 ] 158 root - ERROR - Species count mismatch:    farmer_name  total_species_distributed  trees_planted
 0     farmer_b                        371            370
 1     farmer_c                        509            518
 2     farmer_d                        662            660
@@ -354,20 +354,21 @@
 49    farmer_\x93                        389            415
 50    farmer_\x94                        588            621
 51    farmer_\x95                        166            178
-[ 2025-02-02 16:53:51,603 ] 167 root - INFO - Failed data saved to artifacts/failed_data.csv
-[ 2025-02-02 16:53:51,603 ] 171 root - INFO - Removed 55 invalid records from the clean dataset.
-[ 2025-02-02 16:53:51,605 ] 179 root - INFO - Clean data saved to artifacts/cleaned_data.csv
-[ 2025-02-02 16:53:51,605 ] 197 root - INFO - Data quality checks completed.
-[ 2025-02-02 16:54:08,231 ] 184 root - INFO - Starting data quality checks...
-[ 2025-02-02 16:54:08,236 ] 121 root - ERROR - Invalid date detected in 'farmer_payment_date': Rows [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]
-[ 2025-02-02 16:54:08,238 ] 121 root - ERROR - Invalid date detected in 'contract_date': Rows [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54]
-[ 2025-02-02 16:54:08,241 ] 121 root - ERROR - Invalid date detected in 'plantation_date': Rows [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54]
-[ 2025-02-02 16:54:08,243 ] 121 root - ERROR - Invalid date detected in 'cc_training_date': Rows [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54]
-[ 2025-02-02 16:54:08,252 ] 53 root - ERROR - Land area inconsistencies found:    farmer_name  total_land_area_acre
+[ 2025-02-03 16:52:25,226 ] 167 root - INFO - Failed data saved to artifacts/failed_data.csv
+[ 2025-02-03 16:52:25,226 ] 171 root - INFO - Removed 55 invalid records from the clean dataset.
+[ 2025-02-03 16:52:25,227 ] 179 root - INFO - Clean data saved to artifacts/cleaned_data.csv
+[ 2025-02-03 16:52:25,227 ] 197 root - INFO - Data quality checks completed.
+[ 2025-02-03 16:58:32,326 ] 98 root - INFO - Displaying Data Table with Top 10 Rows
+[ 2025-02-03 16:58:32,329 ] 184 root - INFO - Starting data quality checks...
+[ 2025-02-03 16:58:32,331 ] 121 root - ERROR - Invalid date detected in 'farmer_payment_date': Rows [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]
+[ 2025-02-03 16:58:32,332 ] 121 root - ERROR - Invalid date detected in 'contract_date': Rows [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54]
+[ 2025-02-03 16:58:32,333 ] 121 root - ERROR - Invalid date detected in 'plantation_date': Rows [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54]
+[ 2025-02-03 16:58:32,334 ] 121 root - ERROR - Invalid date detected in 'cc_training_date': Rows [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54]
+[ 2025-02-03 16:58:32,337 ] 53 root - ERROR - Land area inconsistencies found:    farmer_name  total_land_area_acre
 1     farmer_c                     5
 20    farmer_v                     5
 48    farmer_\x92                     8
-[ 2025-02-02 16:54:08,262 ] 133 root - ERROR - Contract uploaded but payment not collected:    farmer_name
+[ 2025-02-03 16:58:32,341 ] 133 root - ERROR - Contract uploaded but payment not collected:    farmer_name
 20    farmer_v
 21    farmer_w
 22    farmer_x
@@ -403,7 +404,7 @@
 52    farmer_\x96
 53    farmer_\x97
 54    farmer_\x98
-[ 2025-02-02 16:54:08,271 ] 140 root - ERROR - Invalid trees planted count:    farmer_name  trees_planted
+[ 2025-02-03 16:58:32,345 ] 140 root - ERROR - Invalid trees planted count:    farmer_name  trees_planted
 1     farmer_c            518
 2     farmer_d            660
 3     farmer_e           1100
@@ -444,7 +445,7 @@
 52    farmer_\x96            907
 53    farmer_\x97            514
 54    farmer_\x98            342
-[ 2025-02-02 16:54:08,281 ] 158 root - ERROR - Species count mismatch:    farmer_name  total_species_distributed  trees_planted
+[ 2025-02-03 16:58:32,349 ] 158 root - ERROR - Species count mismatch:    farmer_name  total_species_distributed  trees_planted
 0     farmer_b                        371            370
 1     farmer_c                        509            518
 2     farmer_d                        662            660
@@ -474,20 +475,27 @@
 49    farmer_\x93                        389            415
 50    farmer_\x94                        588            621
 51    farmer_\x95                        166            178
-[ 2025-02-02 16:54:08,287 ] 167 root - INFO - Failed data saved to artifacts/failed_data.csv
-[ 2025-02-02 16:54:08,287 ] 171 root - INFO - Removed 55 invalid records from the clean dataset.
-[ 2025-02-02 16:54:08,294 ] 179 root - INFO - Clean data saved to artifacts/cleaned_data.csv
-[ 2025-02-02 16:54:08,294 ] 197 root - INFO - Data quality checks completed.
-[ 2025-02-02 16:58:51,968 ] 184 root - INFO - Starting data quality checks...
-[ 2025-02-02 16:58:51,972 ] 121 root - ERROR - Invalid date detected in 'farmer_payment_date': Rows [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]
-[ 2025-02-02 16:58:51,974 ] 121 root - ERROR - Invalid date detected in 'contract_date': Rows [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54]
-[ 2025-02-02 16:58:51,975 ] 121 root - ERROR - Invalid date detected in 'plantation_date': Rows [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54]
-[ 2025-02-02 16:58:51,977 ] 121 root - ERROR - Invalid date detected in 'cc_training_date': Rows [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54]
-[ 2025-02-02 16:58:51,981 ] 53 root - ERROR - Land area inconsistencies found:    farmer_name  total_land_area_acre
+[ 2025-02-03 16:58:32,353 ] 167 root - INFO - Failed data saved to artifacts/failed_data.csv
+[ 2025-02-03 16:58:32,353 ] 171 root - INFO - Removed 55 invalid records from the clean dataset.
+[ 2025-02-03 16:58:32,355 ] 179 root - INFO - Clean data saved to artifacts/cleaned_data.csv
+[ 2025-02-03 16:58:32,355 ] 197 root - INFO - Data quality checks completed.
+[ 2025-02-03 16:58:32,358 ] 11 root - INFO - Plotting Total Land Area vs Plantation Area
+[ 2025-02-03 16:58:32,497 ] 22 root - INFO - Plotting Water and Electricity Availability Distribution
+[ 2025-02-03 16:58:32,752 ] 48 root - INFO - Plotting Plantation Trend Over Time
+[ 2025-02-03 16:58:33,391 ] 126 root - INFO - Plotting Top 5 Tree Species Planted
+[ 2025-02-03 16:58:33,754 ] 101 root - INFO - Plotting Payment Distribution among Farmers
+[ 2025-02-03 16:58:33,963 ] 77 root - INFO - Calculating Amount Collected by Each Mode
+[ 2025-02-03 16:58:34,290 ] 155 root - INFO - Plotting CC Training Distribution
+[ 2025-02-03 16:58:44,799 ] 184 root - INFO - Starting data quality checks...
+[ 2025-02-03 16:58:44,806 ] 121 root - ERROR - Invalid date detected in 'farmer_payment_date': Rows [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]
+[ 2025-02-03 16:58:44,808 ] 121 root - ERROR - Invalid date detected in 'contract_date': Rows [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54]
+[ 2025-02-03 16:58:44,810 ] 121 root - ERROR - Invalid date detected in 'plantation_date': Rows [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54]
+[ 2025-02-03 16:58:44,812 ] 121 root - ERROR - Invalid date detected in 'cc_training_date': Rows [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54]
+[ 2025-02-03 16:58:44,821 ] 53 root - ERROR - Land area inconsistencies found:    farmer_name  total_land_area_acre
 1     farmer_c                     5
 20    farmer_v                     5
 48    farmer_\x92                     8
-[ 2025-02-02 16:58:51,986 ] 133 root - ERROR - Contract uploaded but payment not collected:    farmer_name
+[ 2025-02-03 16:58:44,833 ] 133 root - ERROR - Contract uploaded but payment not collected:    farmer_name
 20    farmer_v
 21    farmer_w
 22    farmer_x
@@ -523,7 +531,7 @@
 52    farmer_\x96
 53    farmer_\x97
 54    farmer_\x98
-[ 2025-02-02 16:58:51,990 ] 140 root - ERROR - Invalid trees planted count:    farmer_name  trees_planted
+[ 2025-02-03 16:58:44,843 ] 140 root - ERROR - Invalid trees planted count:    farmer_name  trees_planted
 1     farmer_c            518
 2     farmer_d            660
 3     farmer_e           1100
@@ -564,7 +572,7 @@
 52    farmer_\x96            907
 53    farmer_\x97            514
 54    farmer_\x98            342
-[ 2025-02-02 16:58:51,994 ] 158 root - ERROR - Species count mismatch:    farmer_name  total_species_distributed  trees_planted
+[ 2025-02-03 16:58:44,857 ] 158 root - ERROR - Species count mismatch:    farmer_name  total_species_distributed  trees_planted
 0     farmer_b                        371            370
 1     farmer_c                        509            518
 2     farmer_d                        662            660
@@ -594,20 +602,27 @@
 49    farmer_\x93                        389            415
 50    farmer_\x94                        588            621
 51    farmer_\x95                        166            178
-[ 2025-02-02 16:58:51,997 ] 167 root - INFO - Failed data saved to artifacts/failed_data.csv
-[ 2025-02-02 16:58:51,998 ] 171 root - INFO - Removed 55 invalid records from the clean dataset.
-[ 2025-02-02 16:58:52,001 ] 179 root - INFO - Clean data saved to artifacts/cleaned_data.csv
-[ 2025-02-02 16:58:52,001 ] 197 root - INFO - Data quality checks completed.
-[ 2025-02-02 16:58:59,348 ] 184 root - INFO - Starting data quality checks...
-[ 2025-02-02 16:58:59,353 ] 121 root - ERROR - Invalid date detected in 'farmer_payment_date': Rows [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]
-[ 2025-02-02 16:58:59,356 ] 121 root - ERROR - Invalid date detected in 'contract_date': Rows [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54]
-[ 2025-02-02 16:58:59,359 ] 121 root - ERROR - Invalid date detected in 'plantation_date': Rows [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54]
-[ 2025-02-02 16:58:59,367 ] 121 root - ERROR - Invalid date detected in 'cc_training_date': Rows [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54]
-[ 2025-02-02 16:58:59,375 ] 53 root - ERROR - Land area inconsistencies found:    farmer_name  total_land_area_acre
+[ 2025-02-03 16:58:44,866 ] 167 root - INFO - Failed data saved to artifacts/failed_data.csv
+[ 2025-02-03 16:58:44,866 ] 171 root - INFO - Removed 55 invalid records from the clean dataset.
+[ 2025-02-03 16:58:44,869 ] 179 root - INFO - Clean data saved to artifacts/cleaned_data.csv
+[ 2025-02-03 16:58:44,870 ] 197 root - INFO - Data quality checks completed.
+[ 2025-02-03 16:58:44,875 ] 11 root - INFO - Plotting Total Land Area vs Plantation Area
+[ 2025-02-03 16:58:45,209 ] 22 root - INFO - Plotting Water and Electricity Availability Distribution
+[ 2025-02-03 16:58:45,661 ] 48 root - INFO - Plotting Plantation Trend Over Time
+[ 2025-02-03 16:58:46,268 ] 126 root - INFO - Plotting Top 5 Tree Species Planted
+[ 2025-02-03 16:58:46,672 ] 101 root - INFO - Plotting Payment Distribution among Farmers
+[ 2025-02-03 16:58:46,898 ] 77 root - INFO - Calculating Amount Collected by Each Mode
+[ 2025-02-03 16:58:47,339 ] 155 root - INFO - Plotting CC Training Distribution
+[ 2025-02-03 16:58:55,108 ] 184 root - INFO - Starting data quality checks...
+[ 2025-02-03 16:58:55,115 ] 121 root - ERROR - Invalid date detected in 'farmer_payment_date': Rows [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]
+[ 2025-02-03 16:58:55,118 ] 121 root - ERROR - Invalid date detected in 'contract_date': Rows [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54]
+[ 2025-02-03 16:58:55,121 ] 121 root - ERROR - Invalid date detected in 'plantation_date': Rows [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54]
+[ 2025-02-03 16:58:55,126 ] 121 root - ERROR - Invalid date detected in 'cc_training_date': Rows [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54]
+[ 2025-02-03 16:58:55,133 ] 53 root - ERROR - Land area inconsistencies found:    farmer_name  total_land_area_acre
 1     farmer_c                     5
 20    farmer_v                     5
 48    farmer_\x92                     8
-[ 2025-02-02 16:58:59,385 ] 133 root - ERROR - Contract uploaded but payment not collected:    farmer_name
+[ 2025-02-03 16:58:55,141 ] 133 root - ERROR - Contract uploaded but payment not collected:    farmer_name
 20    farmer_v
 21    farmer_w
 22    farmer_x
@@ -643,7 +658,7 @@
 52    farmer_\x96
 53    farmer_\x97
 54    farmer_\x98
-[ 2025-02-02 16:58:59,394 ] 140 root - ERROR - Invalid trees planted count:    farmer_name  trees_planted
+[ 2025-02-03 16:58:55,154 ] 140 root - ERROR - Invalid trees planted count:    farmer_name  trees_planted
 1     farmer_c            518
 2     farmer_d            660
 3     farmer_e           1100
@@ -684,7 +699,7 @@
 52    farmer_\x96            907
 53    farmer_\x97            514
 54    farmer_\x98            342
-[ 2025-02-02 16:58:59,403 ] 158 root - ERROR - Species count mismatch:    farmer_name  total_species_distributed  trees_planted
+[ 2025-02-03 16:58:55,162 ] 158 root - ERROR - Species count mismatch:    farmer_name  total_species_distributed  trees_planted
 0     farmer_b                        371            370
 1     farmer_c                        509            518
 2     farmer_d                        662            660
@@ -714,20 +729,27 @@
 49    farmer_\x93                        389            415
 50    farmer_\x94                        588            621
 51    farmer_\x95                        166            178
-[ 2025-02-02 16:58:59,411 ] 167 root - INFO - Failed data saved to artifacts/failed_data.csv
-[ 2025-02-02 16:58:59,411 ] 171 root - INFO - Removed 55 invalid records from the clean dataset.
-[ 2025-02-02 16:58:59,416 ] 179 root - INFO - Clean data saved to artifacts/cleaned_data.csv
-[ 2025-02-02 16:58:59,417 ] 197 root - INFO - Data quality checks completed.
-[ 2025-02-02 17:00:00,587 ] 184 root - INFO - Starting data quality checks...
-[ 2025-02-02 17:00:00,593 ] 121 root - ERROR - Invalid date detected in 'farmer_payment_date': Rows [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]
-[ 2025-02-02 17:00:00,594 ] 121 root - ERROR - Invalid date detected in 'contract_date': Rows [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54]
-[ 2025-02-02 17:00:00,596 ] 121 root - ERROR - Invalid date detected in 'plantation_date': Rows [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54]
-[ 2025-02-02 17:00:00,598 ] 121 root - ERROR - Invalid date detected in 'cc_training_date': Rows [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54]
-[ 2025-02-02 17:00:00,601 ] 53 root - ERROR - Land area inconsistencies found:    farmer_name  total_land_area_acre
+[ 2025-02-03 16:58:55,171 ] 167 root - INFO - Failed data saved to artifacts/failed_data.csv
+[ 2025-02-03 16:58:55,171 ] 171 root - INFO - Removed 55 invalid records from the clean dataset.
+[ 2025-02-03 16:58:55,175 ] 179 root - INFO - Clean data saved to artifacts/cleaned_data.csv
+[ 2025-02-03 16:58:55,175 ] 197 root - INFO - Data quality checks completed.
+[ 2025-02-03 16:58:55,184 ] 11 root - INFO - Plotting Total Land Area vs Plantation Area
+[ 2025-02-03 16:58:55,504 ] 22 root - INFO - Plotting Water and Electricity Availability Distribution
+[ 2025-02-03 16:58:55,925 ] 48 root - INFO - Plotting Plantation Trend Over Time
+[ 2025-02-03 16:58:56,519 ] 126 root - INFO - Plotting Top 5 Tree Species Planted
+[ 2025-02-03 16:58:56,901 ] 101 root - INFO - Plotting Payment Distribution among Farmers
+[ 2025-02-03 16:58:57,120 ] 77 root - INFO - Calculating Amount Collected by Each Mode
+[ 2025-02-03 16:58:57,438 ] 155 root - INFO - Plotting CC Training Distribution
+[ 2025-02-03 16:59:26,005 ] 184 root - INFO - Starting data quality checks...
+[ 2025-02-03 16:59:26,007 ] 121 root - ERROR - Invalid date detected in 'farmer_payment_date': Rows [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]
+[ 2025-02-03 16:59:26,008 ] 121 root - ERROR - Invalid date detected in 'contract_date': Rows [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54]
+[ 2025-02-03 16:59:26,009 ] 121 root - ERROR - Invalid date detected in 'plantation_date': Rows [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54]
+[ 2025-02-03 16:59:26,010 ] 121 root - ERROR - Invalid date detected in 'cc_training_date': Rows [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54]
+[ 2025-02-03 16:59:26,013 ] 53 root - ERROR - Land area inconsistencies found:    farmer_name  total_land_area_acre
 1     farmer_c                     5
 20    farmer_v                     5
 48    farmer_\x92                     8
-[ 2025-02-02 17:00:00,606 ] 133 root - ERROR - Contract uploaded but payment not collected:    farmer_name
+[ 2025-02-03 16:59:26,018 ] 133 root - ERROR - Contract uploaded but payment not collected:    farmer_name
 20    farmer_v
 21    farmer_w
 22    farmer_x
@@ -763,7 +785,7 @@
 52    farmer_\x96
 53    farmer_\x97
 54    farmer_\x98
-[ 2025-02-02 17:00:00,610 ] 140 root - ERROR - Invalid trees planted count:    farmer_name  trees_planted
+[ 2025-02-03 16:59:26,021 ] 140 root - ERROR - Invalid trees planted count:    farmer_name  trees_planted
 1     farmer_c            518
 2     farmer_d            660
 3     farmer_e           1100
@@ -804,7 +826,7 @@
 52    farmer_\x96            907
 53    farmer_\x97            514
 54    farmer_\x98            342
-[ 2025-02-02 17:00:00,615 ] 158 root - ERROR - Species count mismatch:    farmer_name  total_species_distributed  trees_planted
+[ 2025-02-03 16:59:26,025 ] 158 root - ERROR - Species count mismatch:    farmer_name  total_species_distributed  trees_planted
 0     farmer_b                        371            370
 1     farmer_c                        509            518
 2     farmer_d                        662            660
@@ -834,7 +856,14 @@
 49    farmer_\x93                        389            415
 50    farmer_\x94                        588            621
 51    farmer_\x95                        166            178
-[ 2025-02-02 17:00:00,618 ] 167 root - INFO - Failed data saved to artifacts/failed_data.csv
-[ 2025-02-02 17:00:00,618 ] 171 root - INFO - Removed 55 invalid records from the clean dataset.
-[ 2025-02-02 17:00:00,621 ] 179 root - INFO - Clean data saved to artifacts/cleaned_data.csv
-[ 2025-02-02 17:00:00,621 ] 197 root - INFO - Data quality checks completed.
+[ 2025-02-03 16:59:26,028 ] 167 root - INFO - Failed data saved to artifacts/failed_data.csv
+[ 2025-02-03 16:59:26,028 ] 171 root - INFO - Removed 55 invalid records from the clean dataset.
+[ 2025-02-03 16:59:26,030 ] 179 root - INFO - Clean data saved to artifacts/cleaned_data.csv
+[ 2025-02-03 16:59:26,030 ] 197 root - INFO - Data quality checks completed.
+[ 2025-02-03 16:59:26,032 ] 11 root - INFO - Plotting Total Land Area vs Plantation Area
+[ 2025-02-03 16:59:26,147 ] 22 root - INFO - Plotting Water and Electricity Availability Distribution
+[ 2025-02-03 16:59:26,301 ] 48 root - INFO - Plotting Plantation Trend Over Time
+[ 2025-02-03 16:59:26,508 ] 126 root - INFO - Plotting Top 5 Tree Species Planted
+[ 2025-02-03 16:59:26,652 ] 101 root - INFO - Plotting Payment Distribution among Farmers
+[ 2025-02-03 16:59:26,736 ] 77 root - INFO - Calculating Amount Collected by Each Mode
+[ 2025-02-03 16:59:26,894 ] 155 root - INFO - Plotting CC Training Distribution
