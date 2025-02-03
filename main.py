@@ -68,12 +68,12 @@ plot_plantation_trend(df_filtered)
 st.subheader(f"🌳 Distribution of Top 5 Tree Species Planted ({selected_district})")
 plot_top_5_tree_species(df_filtered)
 
-#  **5  Stacked Bar Chart: Distribution of Top 5 Tree Species**
+#  **5   Bar Chart: Distribution of farmers payment done **
 st.subheader(f"💰 Farmers Payment Status({selected_district})")
 plot_payment_distribution_bar(df_filtered)
 
-#  **6  Stacked Bar Chart: Distribution of Top 5 Tree Species**
-st.subheader(f"💰 Farmers Payment distribusion({selected_district})")
+#  **6  Bar Chart: Distribution of amount collected by mode **
+st.subheader(f"💰 mode of collection distribusion({selected_district})")
 calculate_amount_by_mode(df_filtered)
 
 
